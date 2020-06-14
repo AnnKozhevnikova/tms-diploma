@@ -6,6 +6,12 @@ const mainStyles =()=>({
         gridTemplateColumns: 'repeat(3, 1fr)',
         gridGap:'1em',
         paddingBottom:'30px',
+
+    },
+    result:{
+        textAlign:'center',
+        fontSize:'2rem',
+        paddingTop:'20px',
     }
 
 

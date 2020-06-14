@@ -3,14 +3,16 @@ import {useDispatch} from "react-redux";
 //styles
 import useStyles from '../style/components/Search';
 //action
-import {searchProducts} from "../action";
+import {searchProducts,allProducts} from "../action";
 
 const Search=()=>{
     const classes=useStyles();
     const [state,setState]=useState([]);
     const dispatch=useDispatch()
     useEffect(()=>{
-        if(state.length>0) {
+        if(state.statusCode===400){
+            dispatch(allProducts())
+        }else{
             dispatch(searchProducts(state));
         }
         console.log(state);
