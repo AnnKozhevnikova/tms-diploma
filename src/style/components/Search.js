@@ -15,6 +15,8 @@ const searchStyles =()=>({
         backgroundColor: '#003efa',
         fontSize:'1.5rem',
         border:'1px solid #003efa',
+        color:'#ffffff',
+        cursor:'pointer',
 
     },
     search:{
@@ -22,6 +24,10 @@ const searchStyles =()=>({
         paddingBottom: '20px',
         display:'flex',
         justifyContent:'center',
+        "& form":{
+            display:'flex',
+        }
+
 
     }
 

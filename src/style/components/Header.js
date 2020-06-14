@@ -12,7 +12,7 @@ const HeaderStyles =()=>({
     homeButton:{
         marginRight:'20px',
     },
-    favoritesButton:{
+    active:{
         opacity:'0.5',
     }
 });
